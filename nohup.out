@@ -1,0 +1,63 @@
+INFO:     Started server process [4127]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:52422 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57688 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40938 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44824 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56274 - "GET /routes HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52596 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48426 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47188 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54652 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40518 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51198 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51208 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41326 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56728 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56742 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49662 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45978 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55560 - "POST /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33850 - "POST /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53054 - "POST /tasks/1/process HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59720 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [4127]
+INFO:     Started server process [4166]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:43268 - "POST /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58942 - "POST /tasks/0/process HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41262 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [4166]
+INFO:     Started server process [4272]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [4272]
+INFO:     Will watch for changes in these directories: ['/home/emoji/devops-lab-service']
+ERROR:    Error loading ASGI app. Could not import module "main".
+INFO:     Will watch for changes in these directories: ['/home/emoji/devops-lab-service']
+ERROR:    Error loading ASGI app. Could not import module "main".
+INFO:     Will watch for changes in these directories: ['/home/emoji/devops-lab-service']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [160752] using StatReload
+INFO:     Started server process [160754]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [160754]
+INFO:     Stopping reloader process [160752]
