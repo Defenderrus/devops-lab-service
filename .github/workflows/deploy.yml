@@ -31,9 +31,9 @@ jobs:
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.VM_HOST }}
+          port: 2222
           username: ${{ secrets.VM_USER }}
           key: ${{ secrets.VM_SSH_KEY }}
-          port: 2222
           script: |
             cd ~/devops-lab-service
             git pull origin master
