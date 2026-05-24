@@ -33,6 +33,7 @@ jobs:
           host: ${{ secrets.VM_HOST }}
           username: ${{ secrets.VM_USER }}
           key: ${{ secrets.VM_SSH_KEY }}
+          port: 2222
           script: |
             cd ~/devops-lab-service
             git pull origin master
