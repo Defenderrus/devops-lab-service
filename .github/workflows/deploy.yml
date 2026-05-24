@@ -28,7 +28,7 @@ jobs:
           docker stop test-app && docker rm test-app
 
       - name: Deploy via SSH
-        uses: appleboy/ssh-action@v1.2.0
+        uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.VM_HOST }}
           port: 2222
