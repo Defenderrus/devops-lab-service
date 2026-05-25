@@ -27,17 +27,13 @@ jobs:
           curl -X POST --fail http://localhost:8000/tasks || exit 1
           docker stop test-app && docker rm test-app
 
-      - name: Setup SSH
-        uses: webfactory/ssh-agent@v0.9.0
-        with:
-          ssh-private-key: ${{ secrets.VM_SSH_KEY }}
-
       - name: Deploy via SSH
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.VM_HOST }}
           username: ${{ secrets.VM_USER }}
           key: ${{ secrets.VM_SSH_KEY }}
+          port: 22
           script: |
             cd ~/devops-lab-service
             git pull origin master
