@@ -27,6 +27,11 @@ jobs:
           curl -X POST --fail http://localhost:8000/tasks || exit 1
           docker stop test-app && docker rm test-app
 
+      - name: Setup SSH
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.VM_SSH_KEY }}
+
       - name: Add VM to known hosts
         run: ssh-keyscan -p 2222 -H ${{ secrets.VM_HOST }} >> ~/.ssh/known_hosts
 
