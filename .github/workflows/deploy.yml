@@ -27,6 +27,9 @@ jobs:
           curl -X POST --fail http://localhost:8000/tasks || exit 1
           docker stop test-app && docker rm test-app
 
+      - name: Add VM to known hosts
+        run: ssh-keyscan -p 2222 -H ${{ secrets.VM_HOST }} >> ~/.ssh/known_hosts
+
       - name: Deploy via SSH
         uses: appleboy/ssh-action@v1.0.3
         with:
